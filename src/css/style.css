@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
+
+}
+.container {
+    width: 1070px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.main {
+    height: 100vh;
+    background: url("/src/img/bg-main.png") no-repeat center/cover;
+}
+
+.main_shadow-top {
+    height: 153px;
+    width: 100%;
+    position: absolute;
+    top: -10%;
+    background: linear-gradient(359.56deg, #1B1B1B 20.85%, rgba(27, 27, 27, 0.535551) 52.78%, rgba(27, 27, 27, 0.18) 76.28%, rgba(27, 27, 27, 0) 99.66%);
+    transform: rotate(-180deg);
+    
+}
+
+.main_shadow-bottom {
+    height: 104px;
+    width: 100%;
+    background: linear-gradient(357.33deg, #1B1B1B 22.15%, rgba(27, 27, 27, 0.535551) 56.13%, rgba(27, 27, 27, 0.18) 81.14%, rgba(27, 27, 27, 0) 106.02%);
+    position: absolute;
+    bottom: 0;
+}
+
+.title>h1 {
+    position: absolute;
+    top: 40%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 139.52%;
+    letter-spacing: 0.03em;
+    color: #FFFBFB;
+}
+.title>h1>b {
+    color: #FF9505; 
+}
+
+.header {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.header_icons>p {
+    color: #fff;
+    position: absolute;
+    left: 12%;
+}
+.header_menu>ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+}
+.header_menu>ul>li {
+    margin-right: 35px;
+    color: #fff;
+  
+}
+.header_menu>ul>li:last-child {
+    padding: 13px 23px;
+    width: 134px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+}
+.header_menu>ul>li:nth-child(3)::after{
+        content: "▼";
+        padding-left: 10px;
+        transform: rotate(180deg);
+}
+
+
+
+
+.select {
+    padding-top: 64px;
+    padding-bottom: 32px;
+    background-color: #1B1B1B;
+}
+.select_filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select_filter-list>ul {
+    list-style: none;
+    color: #fff;
+    display: flex;
+}
+.select_filter-list>ul>li {
+    margin-right: 24px;
+    border: #fff 2px solid;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.select_filter-list>ul>li:first-child {
+    color:#FF9505;
+}
+.select_filter-btn {
+    position: relative;
+    padding: 12px 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 127px;
+}
+.select_filter-btn>button {
+   
+   border:none;
+   background-color: #fff;
+}
+.select_filter-btn>img {
+    position: absolute;
+    right: 8%;
+    top: 27%;
+}
+
+
+.houses {
+    background-color: #1B1B1B; 
+}
+
+.houses_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 535px);
+    grid-template-rows: repeat(3, 507px);
+    gap: 16px;
+   
+}
+.houses_items-fhoto>img {
+    width: 100%;
+    height: 394px;
+}
+.arrow {
+    position: relative;
+}
+
+.arrow_left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.arrow_right {
+    position: absolute;
+    right:  0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.arrow_left_img>img {
+    height: 394px;
+}
+.arrow_right_img>img {
+    height: 394px;
+}
+
+.houses_items-info {
+    background-color: #2C2B2B;
+    width: 100%;
+  
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+  
+}
+.info-price {
+    font-size: 24px;
+    line-height: 34px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    color: #fff;
+}
+.info-view {
+    width: 138px;
+    height: 42px;
+    background: #FFFBFB;
+    border-radius: 8px;
+    padding: 12px 24px;
+}
+.options {
+    padding:0 16px 16px 16px;
+}
+
+.options>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border: #fff 1.5px solid;
+    border-radius: 5px;
+    color: #fff;
+}
+.options>ul>li {
+    margin-right: 15px;
+}
+
+.view {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 32px;
+   
+}
+.view>img {
+    width: 48px;
+    height: 48px;
+}
+
+.view>p {
+    color: #fff;
+}
+
+
+
+.address {
+    padding: 64px 0;
+    background-color: #1B1B1B;
+}
+
+.address_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FF9505;
+}
+
+.address_text {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.address_map { 
+    margin-top: 32px;
+}
+
+.about {
+    position: relative;
+    padding-top: 64px;
+    background:url('../img/city.png')  no-repeat ;
+    background-color:#1B1B1B;
+    background-size: 100%;
+    height: 736px;
+}
+.about_shadow-top {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    transform: rotate(-180deg);
+    top: 0;
+    background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, #1B1B1B 100%);
+}
+.about_shadow-bottom {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, #1B1B1B 100%);
+}
+
+.about_items {
+    position: relative;
+    display: flex;
+}
+.about_item-column {
+    position: absolute;
+    width: 276px;
+    right: -9%;
+    top: 10%;
+}
+.about_item-header {
+    margin-top: 262px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FF9505;
+}
+.about_item-descr {
+    margin-top: 16px;
+    width: 666px;
+    height: 104px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFBFB;
+}
+
+.about_item-btn {
+    margin-top: 16px;
+    width: 126px;
+    height: 42px;
+    background: #FFFBFB;
+    border-radius: 8px;
+}
+.about_h2    {
+    margin-top: 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: rgba(255, 149, 5, 0.8);
+}
+.about_h3 {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(255, 251, 251, 0.65);
+}
+.about_text {
+    margin-top: 8px;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(255, 251, 251, 0.5);
+}
+
+
+
+
+
+
