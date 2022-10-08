@@ -9,6 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                <form action="">
+                    <div class="modal__btn-close" data-close>&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами в ближайщее время!</div>
+                    <input type="text" class="modal__input" placeholder="Ваше имя">
+                    <input type="phone" class="modal__input" placeholder="Ваш телефон">
+                    <input type="email" class="modal__input" placeholder="Ваш email">
+                    <button class="modal__btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
     <section class="main">
         <div class="main_shadow-top">
         </div>
@@ -39,10 +56,10 @@
             <div class="select_filter">
                 <div class="select_filter-list">
                     <ul>
-                        <li>All</li>
-                        <li>Studio</li>
-                        <li>1 Bed Room</li>
-                        <li>2 Bed Room</li>
+                        <li class="list_item" data-id="All">All</li>
+                        <li class="list_item" data-id="Studio">Studio</li>
+                        <li class="list_item" data-id="1Room">1 Bed Room</li>
+                        <li class="list_item" data-id="2Room">2 Bed Room</li>
                     </ul>
                 </div>
                 <div class="select_filter-btn">
@@ -55,9 +72,10 @@
     <section class="houses">
         <div class="container">
             <div class="houses_wrapper">
-                <div class="houses_items">
+                <div   class="houses_items 1Room" >
                     <div class="houses_items-fhoto">
                         <img src="img/hous/items1.png" alt="hous">
+                        
                         <div class="arrow">
                             <div class="arrow_left">
                                 <div class="arrow_left_shadow"></div>
@@ -68,11 +86,11 @@
                                 <div class="arrow_right_img"><img src="./icons/arrow_right.svg" alt="arrow"></div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div class="houses_items-info">
                         <div class="info">
                             <p class="info-price">100.000 $</p>
-                            <button class="info-view">View Details</button>
+                            <button class="info-view" data-open>View Details</button>
                         </div>
                         <div class="options">
                             <ul>
@@ -85,7 +103,7 @@
                         </div>
                     </div>
                 </div> 
-                <div class="houses_items">
+                <div   class="houses_items 2Room">
                     <div class="houses_items-fhoto">
                         
                         <img src="img/hous/items2.png" alt="hous">
@@ -100,10 +118,11 @@
                             </div>
                         </div>
                     </div>
+                   
                     <div class="houses_items-info">
                         <div class="info">
                             <p class="info-price">390.200 $</p>
-                            <button class="info-view">View Details</button>
+                            <button  class="info-view" data-open>View Details</button>
                         </div>
                         <div class="options">
                             <ul>
@@ -116,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="houses_items">
+                <div  class="houses_items 1Room">
                     <div class="houses_items-fhoto">
                         <img src="img/hous/items3.png" alt="hous">
                         <div class="arrow">
@@ -133,7 +152,7 @@
                     <div class="houses_items-info">
                         <div class="info">
                             <p class="info-price">171.200 $</p>
-                            <button class="info-view">View Details</button>
+                            <button  class="info-view" data-open>View Details</button>
                         </div>
                         <div class="options">
                             <ul>
@@ -146,7 +165,7 @@
                         </div>
                     </div>
                 </div> 
-                <div class="houses_items">
+                <div class="houses_items  1Room">
                     <div class="houses_items-fhoto">
                         <img src="img/hous/items4.png" alt="hous">
                         <div class="arrow">
@@ -163,7 +182,7 @@
                     <div class="houses_items-info">
                         <div class="info">
                             <p class="info-price">211.200 $</p>
-                            <button class="info-view">View Details</button>
+                            <button class="info-view" data-open>View Details</button>
                         </div>
                         <div class="options">
                             <ul>
@@ -176,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="houses_items">
+                <div  class="houses_items 1Room">
                     <div class="houses_items-fhoto">
                         <img src="img/hous/items5.png" alt="hous">
                         <div class="arrow">
@@ -193,7 +212,7 @@
                     <div class="houses_items-info">
                         <div class="info">
                             <p class="info-price">143.800 $</p>
-                            <button class="info-view">View Details</button>
+                            <button  class="info-view" data-open>View Details</button>
                         </div>
                         <div class="options">
                             <ul>
@@ -206,7 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="houses_items">
+                <div  class="houses_items 2Room">
                     <div class="houses_items-fhoto">
                         <img src="img/hous/items6.png" alt="hous">
                         <div class="arrow">
@@ -223,7 +242,7 @@
                     <div class="houses_items-info">
                         <div class="info">
                             <p class="info-price">190.400 $</p>
-                            <button class="info-view">View Details</button>
+                            <button  class="info-view" data-open>View Details</button>
                         </div>
                         <div class="options">
                             <ul>
@@ -286,5 +305,67 @@
             </div>
         </div>
 </section>
+
+<section class="slides">
+    <div class="container">
+        <h2 class="slides_header">Other Projects</h2>
+        <p class="slides_descr">Other projects by us in different locations </p>
+        <div class="slideshow-conainer">
+            <div class="mySlides fade">
+                  <img src="./img/france.png" class="slider__img" alt="">
+                  <div class="text">
+                    <h2 class="text_header">Estaing</h2>
+                    <div class="text_location">France</div>
+                  </div>
+            </div>
+            <div class="mySlides fade">
+                  <img src="./img/hous/items2.png" class="slider__img" alt="">
+                  <div class="text">Text</div>
+            </div>
+            <div class="mySlides fade">
+                  <img src="./img/hous/items3.png" class="slider__img" alt="">
+                  <div class="text">Text</div>
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094</button>
+            <button class="next" onclick="plusSlides(1)">&#10095</button>
+        </div>
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>    
+        </div>
+    </div>
+</section>
+
+<section class="feedback">
+    <div class="feedback_shadow"></div>
+    <div class="container">
+        <div class="feedback_wrapper">
+            <div class="feedback_item">
+                <h2 class="feedback_item-title">Did You Find <br> <p>Your Dream Home? </p> </h2>
+                <p class="feedback_item-descr">Thank you for getting in touch! if you find your dream home connect with us</p>
+            </div>
+            <div id="form" class="feedback_item">
+                <form action="">
+                  
+                    <input type="text" class="feedback_name" placeholder="Your Name">
+                    <input type="email" class="feedback_email" placeholder="Your Email">
+                    <input type="phone" class="feedback_phone" placeholder="Phone Number">
+                    <select class="feedback_interested" name="Interested in">
+                        <option value="au">Interested in</option>
+                        <option value="ca">1 Bed Room</option>
+                        <option value="usa">2 Bed Room</option>
+                    </select>
+                    <textarea class="feedback_message">Message</textarea>  
+                    <button class="feedback_btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ 
+<script src="js/script.js"></script> 
 </body>
 </html>
