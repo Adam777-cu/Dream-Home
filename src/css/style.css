@@ -101,7 +101,7 @@
 
 .main {
     height: 100vh;
-    background: url("/src/img/bg-main.png") no-repeat center/cover;
+    background: url("../img/bg-main.png") no-repeat center/cover;
 }
 
 .main_shadow-top {
